@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div id="high-score"><button>View High Scores</button></div>
+        <div id="timer">Time: <span id="countdown"></span></div>
+    </header>
+
+    <main>
+        <section id="start-quiz">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer all of the following code-related questions within the time limit.</p>
+            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <div><button id="start-button" class="hover">Begin Quiz</button></div>
+        </section>
+
+        <section id="questions">
+            <h2 class="question">Question:</h2>
+            <div>
+                <ul id="choices">
+                    <li><button id="answer1" class="answer-button hover"></button></li>
+                    <li><button id="answer2" class="answer-button hover"></button></li>
+                    <li><button id="answer3" class="answer-button hover"></button></li>
+                    <li><button id="answer4" class="answer-button hover"></button></li>
+                </ul>
+            </div>
+            <div class="results"></div>
+        </section>
+
+        <section id="completed">
+            <h3>Quiz completed!</h3>
+            <div>
+                <p>Your score is: <span id="score"></span> </p>
+                <p>Enter your initials: <input type="text" name="initials" id="initials"> <button id="submit-button">Submit</button></p>
+            </div>
+        </section>
+
+        <section id="scores">
+            <h4>High Scores</h4>
+            <ol id="high-scores">
+                <li id="high-score-1" class="list"></li>
+                <li id="high-score-2" class="list"></li>
+                <li id="high-score-3" class="list"></li>
+                <li id="high-score-4" class="list"></li>
+            </ol>
+            <div id="buttons">
+                <button id="back-button" class="hover">Go back</button>
+                <button id="clear-button" class="hover">Clear high scores</button>
+            </div>
+        </section>
+            
+    </main>
+
+    <footer>
+        &copy;2021 - James Crowell - Coding Bootcamp Project 4
+    </footer>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
